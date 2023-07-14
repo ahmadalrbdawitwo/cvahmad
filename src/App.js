@@ -4,10 +4,9 @@ import Secation from './Secation';
 import About from './ab/About';
 import Aboutme from './ab/Aboutme';
 import { Route, Routes , BrowserRouter } from 'react-router-dom';
-import Ex from './Ex';
 import Myproject from './Myproject';
 function App() {
-
+// ahmad alrbdawi
   return (
     <div className="App">
         <Sidebar/>  
