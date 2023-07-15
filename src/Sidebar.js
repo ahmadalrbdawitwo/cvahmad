@@ -4,31 +4,38 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import PersonIcon from '@mui/icons-material/Person';
 import PermContactCalendarIcon from '@mui/icons-material/PermContactCalendar';
 import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
+import { BrowserRouter,Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+
 function Sidebar() {
+  
+
   const [bar , setbar] = useState("-translate-x-full"); 
 
        const handle = ()=> { 
-      if(bar == "translate-x-0"){
+      if(bar === "translate-x-0"){
         setbar("-translate-x-full")
 
-      }else if( bar == "-translate-x-full"){ 
+      }else if( bar === "-translate-x-full"){ 
         setbar("translate-x-0")
 
       }
     }
-
+    function handleLinkClick() {
+    }
+    
         const [sidebar , setsidebar] =useState([
             {
               id:1,
                 name:"Ahmad",
-                diraction:'/',
+                diraction:'/cv/ahmad',
                 icon:<PersonIcon/>,
             },
             {
               id:2,
 
                 name:"about me",
-                diraction:'/about',
+                diraction:'/cv/about',
                 icon:<PermContactCalendarIcon/>,
 
             },
@@ -36,7 +43,7 @@ function Sidebar() {
               id:3,
 
                 name:"My Projects", 
-                diraction:"/project", 
+                diraction:"/cv/project", 
                 icon:<CollectionsBookmarkIcon/>,
 
             }
@@ -64,7 +71,7 @@ function Sidebar() {
 
 <div className='w-1/2 h-24 relative   m-auto  pt-10 '> 
 
-<img className='rounded-full absolute top-8 border-2 border-white' src='ahmad.jpg'></img>
+<img className='rounded-full absolute top-8 border-2 border-white' src='/media/ahmad.jpg' alt='as'></img>
 </div>
 
         </div> 
@@ -78,13 +85,15 @@ function Sidebar() {
       <ul className="space-y-2 font-medium">
        {sidebar.map((item)=>{ 
         return(<li key={item.id}>
-        
-            <a href={`${item.diraction}`} className="text-gray-500 flex items-center p-2   dark:text-white hover:text-yellow-400 dark:hover:bg-gray-700 group">
-       {
+        <a href={item.diraction}  >
+<div className="text-gray-500 flex items-center p-2   dark:text-white hover:text-yellow-400 dark:hover:bg-gray-700 group">
+{
         item.icon
        }
                <span className="flex-1 ml-3 whitespace-nowrap">{item.name}</span>
-            </a>
+        
+  </div>          </a>
+           
          </li>)
        })} 
 

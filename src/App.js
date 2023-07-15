@@ -10,13 +10,14 @@ function App() {
   return (
     <div className="App">
         <Sidebar/>  
+          
       <div className='bg-slate-50 sm:ml-64 m-auto'>
-        <BrowserRouter>
+        <BrowserRouter basename='/cv'>
         <Routes> 
 
-          <Route path='/' element={
+          <Route path="/ahmad" element={
             <>
-        <Secation/>
+       <Secation/> 
 
             </>
           }  />

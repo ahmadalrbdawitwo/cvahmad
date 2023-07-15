@@ -8,7 +8,7 @@ function Myproject() {
         {
             id:6, 
 
-            img:'6.jpg',
+            img:'/Media/6.jpg',
         title:'Multi-vendor store',
         describe:'Programming and designing a multi-vendor store to see the source code on git hub', 
         btn:"GitHub",
@@ -19,7 +19,7 @@ function Myproject() {
 
         ]     
     },
-        {img:'1.jpg',
+        {img:'/Media/1.jpg',
         id:1, 
 
         title:' Prestige Media',
@@ -30,7 +30,7 @@ function Myproject() {
 
         ]     
     },
-        {img:'2.jpg',
+        {img:'/Media/2.jpg',
         id:2, 
 
         title:'Al-Arands',
@@ -42,7 +42,7 @@ function Myproject() {
         ]    
     },
      
-    {img:'3.jpg',
+    {img:'/Media/3.jpg',
     id:3, 
 
     title:'Offices and Engineering Companies Authority',
@@ -53,7 +53,7 @@ function Myproject() {
         "3D max"
 
     ]    
-},  {img:'4.jpg',
+},  {img:'/Media/4.jpg',
 id:4, 
 
 title:'family bakeries',
@@ -63,7 +63,7 @@ type:[
     'Photoshop' , 
 
 ]    
-},  {img:'5.jpg',
+},  {img:'/Media/5.jpg',
 id:5, 
 
 title:'Al-Shallal Building Maintenance Company',
