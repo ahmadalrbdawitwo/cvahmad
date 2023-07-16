@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/cvahmad/static/css/main.a15a137b.css",
+    "main.js": "/cvahmad/static/js/main.eca2cbc2.js",
+    "static/media/bg.jpg": "/cvahmad/static/media/bg.83f5e8dd495d0ad445ac.jpg",
+    "index.html": "/cvahmad/index.html",
+    "main.a15a137b.css.map": "/cvahmad/static/css/main.a15a137b.css.map",
+    "main.eca2cbc2.js.map": "/cvahmad/static/js/main.eca2cbc2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a15a137b.css",
+    "static/js/main.eca2cbc2.js"
+  ]
+}
