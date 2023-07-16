@@ -6,7 +6,6 @@ import Aboutme from './ab/Aboutme';
 import { Route, Routes , BrowserRouter } from 'react-router-dom';
 import Myproject from './Myproject';
 function App() {
-// ahmad alrbdawi
   return (
     <div className="App">
         <Sidebar/>  
